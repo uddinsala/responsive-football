@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    background: #FFF;
+    color: #333;
+}
+a {
+    color: #E02C6D;
+    text-decoration: none;
+}
+h1 {
+    font-size: 38px;
+    line-height: 45px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
+h5 {
+    font-size: 16px;
+    line-height: 22px;
+}
+h6 {
+    font-size: 15px;
+    line-height: 22px;
+}
+i {
+    margin-left: 8px;
+}
+.flex {
+  display: flex;
+}
+.p-30 {
+    padding: 30px;
+}
+.py-70 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background: #E02C6D;
+    color: #FFF;
+}
+.btn:hover {
+    background-color: #e7e7e8;
+    color: #333;
+}
+.readmore {
+    border: 1px #ccc solid;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+.readmore:hover{
+    background-color: #ccc;
+}
+button.btn {
+    border: none;
+}
+.text-center {
+    text-align: center;
+}
+h2.title{
+    margin-bottom: 50px;
+}
+.bglight {
+    background-color: #fff4ee;
+}
+section {
+    padding-top: 165px;
+}
+header,main {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.container {
+    width: 1164px;
+}
+/**** header Css ******/
+header {
+    background-color: #2d25a0;
+    padding: 49px 0 86px 0;
+    animation: changebg 5s infinite;
+}
+@keyframes changebg {
+    from {background-color: #2d25a0;}
+    to {background-color: #02a5fc;}
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li:first-child a {
+    padding-left: 0;
+}
+nav ul li a {
+    font-weight:500;
+    padding: 10px 20px;
+    color: #FFF;
+}
+nav ul li a:hover{
+    color: #E02C6D;
+}
+nav i {
+    margin: 0 8px 0 0;
+}
+/**** Start Banner Area ***/
+.banner {
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.bannercontent {
+    justify-content: center;
+    align-self: center;
+    width: 485px;
+}
+.bannercontent h1 {
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 35px;
+    color: #FFF;
+}
+.bannercontent .btn {
+    margin-top: 20px;
+}
+/**** End Banner Area ***/
+main {
+    padding: 70px 0;
+}
+
+/**** Start player-info ***/
+.players {
+    padding: 0 57px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.player {
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.players .players h3 {
+    margin: 16px 0 10px 0;
+}
+
+.highlights,.download-app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.highlight-content{
+    width: 469px;
+    margin-right: 66px;
+}
+.highlight-content h2 {
+    margin-bottom: 8px;
+}
+.highlight-content .btn {
+    margin-top: 24px;
+}
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.description {
+    margin-top: 10px;
+}
+.thumb_date {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.thumb_date img {
+    display: block;
+}
+.date {
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    background-color: #000;
+    padding-top: 12px;
+    color: #999;
+    padding: 5px 20px;
+    z-index: 2;
+}
+.app-content {
+    margin-left: 30px;
+}
+.store-btns {
+    margin-top: 30px;
+}
+.store-btns a {
+    margin-right:15px;
+}
+/**** End About Me Section ***/
+.newsletter {
+    background-color: #f3f3f3;
+    display: flex;
+    padding: 40px 100px;
+    margin-top: 165px;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter form {
+    margin-left: 30px;
+}
+.newsletter input {
+    padding: 10px 20px;
+    width: 600px;
+    max-width: 100%;
+    border: none;
+}
+.newsletter input:focus,
+.newsletter input:focus-visible {
+    border: 1px #E02C6D solid;
+    outline: none;
+}
+.newsletter .btn {
+    background-color: #E02C6D;
+    cursor: pointer;
+}
+.newsletter .btn:hover {
+    background-color: #333;
+    color: #FFF;
+}
+.newsletter i {
+    margin: 0;
+}
+/*** Footer ***/
+footer {
+    padding: 88px 0 63px 0;
+}
+.social-link {
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+}
+.social-link li {
+    height: 32px;
+    width: 32px;
+    margin: 0 7px;
+}
+.social-link li a {
+    display: block;
+    text-align: center;
+    color: #969bab;
+    background-color: #e7e7e8;
+    border-radius: 50%;
+    line-height: 32px;
+}
+.social-link li a:hover {
+    background-color: #E02C6D;
+    color: #FFF;
+}
+.social-link li i {
+    margin: 0;
+}
+
+
+@media (max-width: 1199px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+@media (max-width: 991px) {
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    header {
+        padding: 33px 0 61px 0;
+    }
+    .bannercontent h1 {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    section {
+        padding-top: 60px;
+    }
+    .players {
+        padding: 0;
+    }
+    .players,.blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlight-content {
+        width: auto;
+        margin-right: 20px;
+    }
+    .newsletter input {
+        width: auto;
+    }
+}
+@media (max-width: 767px) {
+    
+    .banner,.highlights,.download-app,.newsletter {
+        display: block;
+    }
+    .bannercontent,.highlight-content {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .players,.blog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu ul {
+        display: none;
+        position: absolute;
+    }
+    .menu:hover > ul {
+        display: block;
+    }
+    .newsletter {
+        padding: 30px;
+    }
+    .newsletter h4 {
+        text-align: center;
+    }
+    .newsletter form {
+        margin: 20px 0 0 0;
+    }
+}
