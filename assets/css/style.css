@@ -1,3 +1,10 @@
+/**** imported Css link ******/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/**** End imported Css link ******/
+
+/**** start common css ******/
 * {
     margin: 0;
     padding: 0;
@@ -32,29 +39,22 @@ h3 {
     line-height: 40px;
 }
 h4 {
+    font-size: 20px;
+    line-height: 28px;
+}
+h5 {
     font-size: 18px;
     line-height: 24px;
 }
-h5 {
-    font-size: 16px;
-    line-height: 22px;
-}
 h6 {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 24px;
 }
 i {
     margin-left: 8px;
 }
 .flex {
   display: flex;
-}
-.p-30 {
-    padding: 30px;
-}
-.py-70 {
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 .btn {
     display: inline-block;
@@ -93,15 +93,16 @@ h2.title{
 section {
     padding-top: 165px;
 }
+.container {
+    width: 1164px;
+}
+/**** header Css ******/
 header,main {
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
-.container {
-    width: 1164px;
-}
-/**** header Css ******/
+
 header {
     background-color: #2d25a0;
     padding: 49px 0 86px 0;
@@ -111,6 +112,9 @@ header {
     from {background-color: #2d25a0;}
     to {background-color: #02a5fc;}
 }
+/*********************************
+Menu Style 
+ ********************************/
 nav {
     display: flex;
     justify-content: space-between;
@@ -142,7 +146,9 @@ nav ul li a:hover{
 nav i {
     margin: 0 8px 0 0;
 }
-/**** Start Banner Area ***/
+/*********************************
+Banner Style 
+ ********************************/
 .banner {
     padding-top: 50px;
     justify-content: space-between;
@@ -161,12 +167,28 @@ nav i {
 .bannercontent .btn {
     margin-top: 20px;
 }
-/**** End Banner Area ***/
+.banner:hover .btn{
+   background-image: linear-gradient(90deg, #d20e55 0%, #ef4280 49%, #ef4280 80%, #d20e55 100%);
+   animation:slidebg 5s linear infinite;
+}
+.banner .btn:hover{
+    background: #e7e7e8;
+    color: #333;
+}
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+/*********************************
+Main Part Style 
+ ********************************/
 main {
     padding: 70px 0;
 }
-
-/**** Start player-info ***/
+/*********************************
+players Information
+ ********************************/
 .players {
     padding: 0 57px;
     display: grid;
@@ -182,7 +204,9 @@ main {
 .players .players h3 {
     margin: 16px 0 10px 0;
 }
-
+/*********************************
+highlights style
+ ********************************/
 .highlights,.download-app {
     display: flex;
     align-items: center;
@@ -198,6 +222,9 @@ main {
 .highlight-content .btn {
     margin-top: 24px;
 }
+/*********************************
+Blog style
+ ********************************/
 .blog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -226,6 +253,9 @@ main {
     padding: 5px 20px;
     z-index: 2;
 }
+/*********************************
+download app style
+ ********************************/
 .app-content {
     margin-left: 30px;
 }
@@ -235,7 +265,9 @@ main {
 .store-btns a {
     margin-right:15px;
 }
-/**** End About Me Section ***/
+/*********************************
+Newslatter style
+ ********************************/
 .newsletter {
     background-color: #f3f3f3;
     display: flex;
@@ -269,10 +301,15 @@ main {
 .newsletter i {
     margin: 0;
 }
-/*** Footer ***/
+/*********************************
+Footer style
+ ********************************/
 footer {
     padding: 88px 0 63px 0;
 }
+/*********************************
+Social Link style
+ ********************************/
 .social-link {
     justify-content: center;
     list-style: none;
@@ -299,7 +336,9 @@ footer {
     margin: 0;
 }
 
-
+/*********************************
+Responsive view style
+ ********************************/
 @media (max-width: 1199px) {
     .container {
         width: 100%;
@@ -313,42 +352,6 @@ footer {
     }
     header {
         padding: 33px 0 61px 0;
-    }
-    .bannercontent h1 {
-        font-size: 36px;
-        line-height: 50px;
-        margin-bottom: 10px;
-    }
-    section {
-        padding-top: 60px;
-    }
-    .players {
-        padding: 0;
-    }
-    .players,.blog {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .highlight-content {
-        width: auto;
-        margin-right: 20px;
-    }
-    .newsletter input {
-        width: auto;
-    }
-}
-@media (max-width: 767px) {
-    main {
-        padding: 47px 0;
-    }
-    .banner,.highlights,.download-app,.newsletter {
-        display: block;
-    }
-    .bannercontent,.highlight-content {
-        width: 100%;
-        margin: 0 0 30px 0;
-    }
-    .players,.blog {
-        grid-template-columns: repeat(1, 1fr);
     }
     .toggle {
         display: block;
@@ -375,6 +378,24 @@ footer {
         display: block;
         left: 15px;
     }
+    .bannercontent h1 {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    section {
+        padding-top: 60px;
+    }
+    .players {
+        padding: 0;
+    }
+    .players,.blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlight-content {
+        width: auto;
+        margin-right: 20px;
+    }
     .newsletter {
         padding: 30px;
         margin-top: 30px;
@@ -385,7 +406,30 @@ footer {
     .newsletter form {
         margin: 20px 0 0 0;
     }
+    .newsletter input {
+        width: auto;
+    }
+}
+@media (max-width: 767px) {
+    main {
+        padding: 47px 0;
+    }
+    .banner,.highlights,.download-app,.newsletter {
+        display: block;
+    }
+    .bannercontent,.highlight-content {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .players,.blog {
+        grid-template-columns: repeat(1, 1fr);
+    }
     footer {
         padding: 30px;
+    }
+}
+@media (max-width: 385px) {
+    newsletter {
+        padding: 15px;
     }
 }
