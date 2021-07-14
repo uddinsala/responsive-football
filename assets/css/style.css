@@ -429,7 +429,18 @@ Responsive view style
     }
 }
 @media (max-width: 385px) {
-    newsletter {
+    .newsletter {
         padding: 15px;
+    }
+    .newsletter form {
+        display: block
+    }
+    .newsletter input {
+        width:100%;
+        padding: 10px;
+    }
+    .newsletter .btn {
+        width: 100%;
+        margin-top: 10px;
     }
 }
