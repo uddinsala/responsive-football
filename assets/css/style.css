@@ -117,6 +117,11 @@ nav {
     align-content: center;
     align-items: center;
 }
+.toggle {
+    display: none;
+    color: #FFF;
+    font-size: 24px;
+}
 nav ul {
     display: flex;
 }
@@ -332,7 +337,9 @@ footer {
     }
 }
 @media (max-width: 767px) {
-    
+    main {
+        padding: 47px 0;
+    }
     .banner,.highlights,.download-app,.newsletter {
         display: block;
     }
@@ -343,20 +350,42 @@ footer {
     .players,.blog {
         grid-template-columns: repeat(1, 1fr);
     }
-    .menu ul {
-        display: none;
+    .toggle {
+        display: block;
+    }
+    .menu > ul {
+        display: block;
+        visibility: hidden;
         position: absolute;
+        left: -200px;
+        background-color: #FFF;
+        -webkit-transition: all ease 1s;
+        -moz-transition: all ease 1s;
+        transition: all ease 1s;
+    }
+    .menu > ul li a,
+    nav ul li:first-child a {
+        display: block;
+        padding: 5px 20px;
+        color: #333;
+        border-bottom: 1px #ccc solid;
     }
     .menu:hover > ul {
+        visibility:visible;
         display: block;
+        left: 15px;
     }
     .newsletter {
         padding: 30px;
+        margin-top: 30px;
     }
     .newsletter h4 {
         text-align: center;
     }
     .newsletter form {
         margin: 20px 0 0 0;
+    }
+    footer {
+        padding: 30px;
     }
 }
